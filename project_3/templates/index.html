@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+
+    
+    <body>
+        <h1>Silent Epidemic of Human Mind</h1>
+        <div class="wrapper">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html">This prediction model is built to find signals correlated to suicide rates among different cohorts globally
+                  
+                </a>
+                </div>
+            </div>
+            </nav>
+            <div class="hero text-center">
+                <h1>Suicide Rate Predictor Model 2016</h1>
+                <p>Predicts suicide rates by Country, Generation, Gender</p>
+              </div>
+
+    <form id="form" action="/predict" method="POST">
+        <select class="js-select2" name="country">
+            <option>Please choose</option>
+            <option value= Mauritius > Mauritius </option>
+            <option value= Austria > Austria </option>
+            <option value= Netherlands > Netherlands </option>
+            <option value= Iceland > Iceland </option>
+            <option value= Singapore > Singapore </option>
+            <option value= Israel > Israel </option>
+            <option value= Belgium > Belgium </option>
+            <option value= Colombia > Colombia </option>
+            <option value= Greece > Greece </option>
+            <option value= Malta > Malta </option>
+            <option value= Spain > Spain </option>
+            <option value= Italy > Italy </option>
+            <option value= Mexico > Mexico </option>
+            <option value= Brazil > Brazil </option>
+            <option value= United States > United States </option>
+            <option value= Japan > Japan </option>
+            <option value= Argentina > Argentina </option>
+            <option value= United Kingdom > United Kingdom </option>
+            <option value= Luxembourg > Luxembourg </option>
+            <option value= Chile > Chile </option>
+            <option value= Puerto Rico > Puerto Rico </option>
+            <option value= Ecuador > Ecuador </option>
+            <option value= Norway > Norway </option>
+            <option value= Australia > Australia </option>
+            <option value= Costa Rica > Costa Rica </option>
+            <option value= France > France </option>
+            <option value= Guatemala > Guatemala </option>
+            <option value= Ireland > Ireland </option>
+            <option value= Bulgaria > Bulgaria </option>
+            <option value= Sweden > Sweden </option>
+            <option value= Finland > Finland </option>
+            <option value= Turkmenistan > Turkmenistan </option>
+            <option value= New Zealand > New Zealand </option>
+            <option value= Canada > Canada </option>
+            <option value= Ukraine > Ukraine </option>
+            <option value= Suriname > Suriname </option>
+            <option value= Belize > Belize </option>
+            <option value= Uruguay > Uruguay </option>
+            <option value= Thailand > Thailand </option>
+            <option value= Romania > Romania </option>
+            <option value= Antigua and Barbuda > Antigua and Barbuda </option>
+            <option value= Portugal > Portugal </option>
+            <option value= Russian Federation > Russian Federation </option>
+            <option value= Trinidad and Tobago > Trinidad and Tobago </option>
+            <option value= Paraguay > Paraguay </option>
+            <option value= Czech Republic > Czech Republic </option>
+            <option value= Kazakhstan > Kazakhstan </option>
+            <option value= Germany > Germany </option>
+            <option value= Hungary > Hungary </option>
+            <option value= Grenada > Grenada </option>
+            <option value= Guyana > Guyana </option>
+            <option value= Barbados > Barbados </option>
+            <option value= Panama > Panama </option>
+            <option value= Kuwait > Kuwait </option>
+            <option value= Armenia > Armenia </option>
+            <option value= Cuba > Cuba </option>
+            <option value= Poland > Poland </option>
+            <option value= El Salvador > El Salvador </option>
+            <option value= Albania > Albania </option>
+            <option value= Uzbekistan > Uzbekistan </option>
+            <option value= Georgia > Georgia </option>
+            <option value= Denmark > Denmark </option>
+            <option value= Croatia > Croatia </option>
+            <option value= Lithuania > Lithuania </option>
+            <option value= Latvia > Latvia </option>
+            <option value= Estonia > Estonia </option>
+            <option value= Bahrain > Bahrain </option>
+            <option value= Belarus > Belarus </option>
+            <option value= Switzerland > Switzerland </option>
+            <option value= Slovenia > Slovenia </option>
+            <option value= South Africa > South Africa </option>
+            <option value= Serbia > Serbia </option>
+            <option value= Seychelles > Seychelles </option>
+            <option value= Jamaica > Jamaica </option>
+            <option value= Azerbaijan > Azerbaijan </option>
+            <option value= Philippines > Philippines </option>
+            <option value= Cyprus > Cyprus </option>
+            <option value= Qatar > Qatar </option>
+            <option value= Aruba > Aruba </option>
+            <option value= Sri Lanka > Sri Lanka </option>
+            <option value= Kiribati > Kiribati </option>
+            <option value= Fiji > Fiji </option>
+            <option value= Montenegro > Montenegro </option>
+            <option value= Maldives > Maldives </option>
+            <option value= Turkey > Turkey </option>
+            <option value= United Arab Emirates > United Arab Emirates </option>
+            <option value= Nicaragua > Nicaragua </option>
+            <option value= Oman > Oman </option>
+            <option value= San Marino > San Marino </option>
+            <option value= Bosnia and Herzegovina > Bosnia and Herzegovina </option>
+            <option value= Cabo Verde > Cabo Verde </option>
+            <option value= Dominica > Dominica </option>
+            <option value= Mongolia > Mongolia </option>
+            </select>
+            <select class="js-select2" name="age-range">
+                <option>Please chooses</option>
+                <option> 25-34 years </option>
+                <option> 15-24 years </option>
+                <option> 75+ years </option>
+                <option> 5-14 years </option>
+                <option> 55-74 years </option>
+                <option> 35-54 years </option>
+            </select>
+            <select class="js-select2" name="generation">
+                <option>Please chooses</option>
+                <option> Generation X </option>
+                <option> Silent </option>
+                <option> G.I. Generation </option>
+                <option> Boomers </option>
+                <option> Millenials </option>
+                <option> Generation Z </option>
+            </select>
+            <select class="js-select2" name="sex">
+                <option>Please chooses</option>
+                <option>Male</option>
+                <option>Female</option>  
+            </select>
+            <div class="container-contact100-form-btn">
+                <button class="contact100-form-btn">
+                    Predict
+                </button>
+            </div>
+            {% if result %}
+            <p>Expected suicide No. is: {{result}} </p>
+            {% endif %}
+    </form>
+
+    <footer>
+        <div class="footer-blurb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 footer-blurb-item">
+                        <h3><span class="glyphicon glyphicon-text-size"></span>Conclusion 1:</h3>
+                        <p>What is the age range on which suicidal actions are the most? and for this question the answer was: It is seen that the suicide number increases in the age range(35-54) Which is at mostly the age of work and it is low in age ranges beyond 75 and lower than 14.</p>
+                        <p><a class="btn btn-default" href="#">Age Range</a></p>
+                    </div>
+                    <div class="col-sm-3 footer-blurb-item">
+                        <h3><span class="glyphicon glyphicon-wrench"></span>Conclusion 2:</h3>
+                        <p>By looking to the population two different genders it was found that: The suicides among males is more than that among females. The sex label values are nearly equal in population so this indicates that the previous result that males commit more suicides than females is true</p>
+                        <p><a class="btn btn-default" href="#">Gender</a></p>
+                    </div>
+                    <div class="col-sm-3 footer-blurb-item">
+                        <h3><span class="glyphicon glyphicon-paperclip"></span>Conclusion 3:</h3>
+                        <p>When we see the ditribution in the income groups - surprisingly the Lower Middle and Low Income group has Less suicide count yearwise and worldwide. Instigating a thought to work more on behavioral aspects of victims</p>
+                        <p><a class="btn btn-default" href="#">Socioeconomic</a></p>
+                    </div>
+                    <div class="col-sm-3 footer-blurb-item">
+<!-- <div id="prediction"></div>
+<form action="/predict" method="GET"></form>
+<script>
+    var prediction = document.querySelector("#prediction");
+    var form = document.querySelector("#form");
+    form.addEventListener("submit", event=> {
+        // event.preventDefault();
+        fetch("/predict").then(res => res.json()).then(data => console.log(data))
+        console.log("click")
+    })
+    console.log(form) -->
+</script>
+ <!-- <script src="/static/js/main.js"></script> -->
+</body>
+</html>
